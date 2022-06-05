@@ -1,0 +1,185 @@
+p {
+    color: white;
+}
+
+.included-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: #fff;
+    opacity: 80%;
+}
+
+.sign-up-text {
+    color: #fff;
+}
+
+.sign-up-text:hover {
+    color: rgb(191, 191, 191);
+}
+
+ .header {
+     margin-top: 0rem;
+     height: 530px;
+     background: url("/assets/img/header.jpg") no-repeat center center / cover;
+
+ }
+
+ .header nav {
+     display: flex;
+     justify-content: flex-end;
+     padding: 20px 40px;
+     z-index: 2;
+     position: relative;
+ }
+
+ .header nav .login-btn{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+ }
+
+ .header .header-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
+     align-items: center;
+     margin-top: 60px;
+ }
+
+ .header .logo {
+     width: 600px;
+     margin: 0px;
+ }
+
+ .header .header-text-1 {
+     font-size: 22px;
+     font-weight: 500;
+     text-align: center;
+     
+     margin-bottom: 2px;
+ }
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 180px; */
+    z-index: 1;
+    background: linear-gradient(
+        156.82deg,
+        rgba(0, 0, 0, 0.6) 4.58%,
+        rgba(0, 0, 0, 0) 69.61%
+      ),
+      linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.btn {
+    display: inline-block;
+    background: #fff;
+    color: #333;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 14px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-cta:hover {
+    opacity: 0.8;
+}
+
+nav {
+    position: fixed;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    font-size: 2rem;
+    font-weight: 500;
+    width: 100%;
+    /* height: 8rem; */
+    background:linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    color: white;
+    z-index: 4;
+  }
+
+  /* navbar part */
+
+  
+  .logo_home {
+    display: flex;
+    position: absolute;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 800;
+    /* background-color: #1e965e; */
+    border-radius: 1rem;
+    padding: 1rem;
+    margin: 1rem 3rem 1rem 3rem;
+  }
+  
+  .logo_home a{
+    text-decoration: none;
+    color: #3cdd52;
+    font-family: 'Walt Disney Script', arial;
+  } 
+  
+  .navbarNav {
+    display: flex;
+    position: absolute;
+    margin: 3rem 2rem 1rem 20rem;
+    font-size: 1rem;
+    width: 75%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  ul li a:hover {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  ul li {
+    margin-left: 2rem;
+  }
+  
+  
+
+
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    .header .logo {
+        width: 300px;
+    }
+
+    .header .header-content {
+        text-align: center;
+        padding: 0 20px;
+    }
+}

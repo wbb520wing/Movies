@@ -1,0 +1,23 @@
+<div class="form_modal_container">
+    <div class="form_container">
+      <form [formGroup]="myLoginForm" (ngSubmit)="loginInfo(myLoginForm)">
+        <fieldset>
+          <legend>Login</legend>
+          <div class="form-group">
+            <label for="loginEmail">EMAIL</label>
+            <input type="email" id="login_email" placeholder="Enter email" formControlName="email"/>
+          </div>
+          <div class="form-group">
+            <label for="loginPassword">PASSWORD</label>
+            <input type="password" id="login_password" placeholder="Enter password"  formControlName="password"/>
+            <span style="color: red;" *ngIf="password && password.invalid && password.touched">
+              Error: Please enter your password</span>
+          </div>
+          <!-- <button (click)="loginInfo()" type="button" class="btn btn-secondary" [disabled]="myLoginForm.invalid">Login</button> -->
+          <button type="submit" class="btn btn-secondary" >Login</button>
+          <button routerLink="/register" type="button" class="btn btn-secondary">Register</button>
+          <small>Forget your email or password?</small>
+        </fieldset>
+      </form>
+    </div>
+  </div>

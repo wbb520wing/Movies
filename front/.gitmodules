@@ -1,0 +1,3 @@
+[submodule "nestjs-training-backend-movie"]
+	path = nestjs-training-backend-movie
+	url = https://github.com/Show3567/nestjs-training-backend-movie.git

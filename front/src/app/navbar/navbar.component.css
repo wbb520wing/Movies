@@ -1,0 +1,39 @@
+
+.modal-body ul:hover {
+  background-color: #11613c7c;
+}
+
+.modal-content{
+  background-color:black;
+  opacity: 0.87;
+  border: 0.5px  white;
+  border-radius: 1rem;
+}
+
+
+
+.modal-body input {
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 75%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  height: 3rem;
+}
+
+
+.modal-body button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+
+.card_style  {
+  padding: 5px;
+  height: 70px;
+  width: 60px;
+  border-radius: 10px;
+}

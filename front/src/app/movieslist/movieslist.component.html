@@ -1,0 +1,36 @@
+<router-outlet></router-outlet>
+
+
+<div class="movielist"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="1500"
+  (scrolled)="onScroll()"
+>
+  <div class="movieContainer"
+  *ngFor="let card of moviesCard$ | async">
+    <div class="movieCard" [id]="card.id" (click)="onSelect(card)">
+        <img class="img_style" [src]="baseImageUrl+card.imgUrl"/>
+    </div>
+
+      <div class="info">
+         <h4>{{ card.moviename }}</h4>
+          <br> {{ card.release }} <br>
+          <small> {{ card.overview }} </small>
+      </div>
+
+  </div>
+
+</div>
+
+<div class="loadmore">
+  <p>Load More...</p>
+</div>
+
+<div class="loadingSpiner" *ngIf="isScroll">
+  <app-loading-spinner></app-loading-spinner>
+</div>
+
+
+
+
